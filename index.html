@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rise & Grind</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="css/themes/mycustomtheme.min.css" />
+
+<!-- Include the jQuery library -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<style type="text/css">
+/*#homepage {
+  background-image: url(images/rise.jpg);
+  background-size: 400px 600px, cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}*/
+
+a { 
+	text-decoration: none;
+}
+
+#aboutMe {
+  background-image: url(images/galaxy.png);
+  background-size: 600px 450px, cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#dialog {
+	padding: 10px;
+}
+
+#font p{
+	padding-left:30px;
+	padding-right:30px;
+}
+</style>
+
+</head>
+<body>
+	<!--First Page-->
+	<section id="homepage" data-role="page" data-theme="b">
+			<div data-role="header">
+				<h1>Rise & Grind</h1>
+			</div>
+
+			<div data-role="ui-content">
+				
+				<div id="font">
+					<h1><center><i>Welcome to:</i></center></h1>
+					<center><img src="images/rise.jpg" style="width: 300px; height:400px"></center>
+					<p>If you've ever been in our shop, then you'll know we're quite fond of coffee.  Every day we do Coffee Tasting with our customers, so they can learn to enjoy their coffee more.  With our tutorial you'll learn a bit more about those curious coffee beans, and develop a your skills tasting coffee!</p>
+					<p><center>If you love coffee, and want to learn more about Coffee Tastings, click our link below!</center></p>
+				
+				<!--start link on home-->
+				<div class="ui-grid-solo">
+					<div class="ui-block-a">
+					<a href="#pageOne" data-transition="slidedown" class="ui-btn" "ui-shadow">Start</a></div>
+				</div>
+				</div>
+			</div>
+
+			<!--Home Page Footer Nav Bar-->
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar" data-iconpos="bottom">
+					<ul>
+						<li><a href="#homepage" data-icon="home">Home</a></li>
+						<li><a href="#aboutMe" data-icon="star">About Me</a></li>
+					</ul>
+				</div>
+			</div>
+	</section>
+
+	<!--First Dialogue Page [page 2]-->
+	<section id="pageOne" data-role="page" data-dialog="true">
+		<div id="dialog" title="Basic dialog">
+			<div data-role="header">
+				<h1>Coffee Tasting</h1>
+			</div>
+			<div data-role="ui-content">
+				<h2>The Basics</h2>
+				<p>Welcome to coffee tasting basics!</p>
+				<p>Here you will learn all about the world of coffee and develop your tasting skills!</p>
+			</div>
+			<div data-role="footer">
+				<a href="#" button class="ui-btn ui-mini ui-icon-arrow-l ui-corner-all ui-btn-icon-notext" disabled="disabled"></button>
+				<a href="#pageTwo" class="ui-btn ui-mini footer-button-right ui-icon-arrow-r ui-corner-all ui-btn-icon-notext" data-transition="fade"></a> 
+			</div>
+		</div>
+	</section>
+
+	<!--Second Dialogue Page-->
+	<section id="pageTwo" data-role="page" data-dialog="true" data-close-btn="false">
+		<div id="dialog" title="Basic dialog">
+			<div data-role="header">
+				<a href="#homepage" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" data-transition="fade"></a>
+				<h1>Step 1 of 7</h1> 
+			</div>
+
+			<div data-role="ui-content">
+				<center><h1>Species</h1></center>
+				<p>	There are over 100 coffee species in the world, however there are two main species that are widely sold and procuded.  These two main species of coffee are: <a href="#arabicaPop" data-rel="popup"><i>Arabica</i></a> and <a href="#robustaPop" data-rel="popup"><i> Robusta</i></a>.   
+				</p>
+				<p><div data-role="collapsible">
+	 				<h4>Arabica Beans</h4>
+	  				<p>Also know as <i>Coffee Arabica</i>.  Thought to be the very first species of coffee to be cultivated, over 1,000 years ago.
+	  				<br>
+	  				<br>It has:<ul>
+	  					<li>Less caffeine</li>
+	  					<li>Less aciditiy</li>
+	  					<li>More aromatic properties</li>
+	  					<li>and are considered the more superior bean</li>
+	  				</ul></p>
+	  				<p><img src="images/arabica-bean.png" style="width:100%; height:100%;"></p>
+				</div>
+				<div data-role="collapsible">
+	 				<h4>Robusta Beans</h4>
+	  				<p>Also known as <i>Coffea Canephora</i>.  Originating in the Congo Basin, this species is widely grown in Arfica and Asia.
+					<br>
+	  				<br>It has:<ul>
+	  					<li>A strong, full-body</li>
+	  					<li>Distinctive earthy flavour</li>
+	  					<li>More bitterness</li>
+	  					<li>and is grown in a climate that is unsuitable for Arabica beans</li>
+	  					</ul></p>
+	  				<p><img src="images/robusta-bean.png" style="width:100%; height:100%;"></p>
+				</div>
+				<br>From here on we will focus on the more popular, Arabica beans.</p>
+			</div>
+
+			<div data-role="popup" id="arabicaPop">
+				<img src="images/arabica-bean.png" style="width:228px; height:200px;">
+			</div>
+			
+			<div data-role="popup" id="robustaPop">
+				<img src="images/robusta-bean.png" style="width:228px; height:200px;">
+			</div>
+
+			<div data-role="footer">
+				<a href="#pageOne" button class="ui-btn ui-icon-arrow-l ui-corner-all ui-btn-icon-notext" data-transition="fade"></a> 
+				<a href="#pageThree" button class="ui-btn ui-icon-arrow-r ui-corner-all ui-btn-icon-notext" data-transition="fade"></a> 
+			</div>
+		</div>
+	</section>
+
+	<!--Third Dialogue Page-->
+	<section id="pageThree" data-role="page" data-dialog="true" data-close-btn="false">
+		<div id="dialog" title="Basic dialog">
+			<div data-role="header">
+				<a href="#homepage" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" data-transition="fade"></a>
+				<h1>Step 2 of 7</h1>
+			</div>
+			<div data-role="ui-content">
+				<center><h1>Growing Regions</h1></center>
+				<p>There are three main coffee-growing regions, each with a distinct landscape, climate and flavour for the coffee beans they grow.</p>
+				<h4>Region One:</h4>
+				<center><img src="images/region1.png" style="width: 100%; height=100%;"></center>
+				<h4>Region Two & Three:</h4>
+				<center><img src="images/region2.png" style="width: 100%; height=100%;"></center>
+			</div>
+			<div data-role="footer">
+				<a href="#pageTwo" button class="ui-btn ui-icon-arrow-l ui-corner-all ui-btn-icon-notext" data-rel="back" data-transition="fade"></a> 
+				<a href="#pageFour" button class="ui-btn ui-icon-arrow-r ui-corner-all ui-btn-icon-notext" data-transition="fade"></a> 
+			</div>
+		</div>
+	</section>
+
+	<!--Fourth Dialogue Page-->
+	<section id="pageFour" data-role="page" data-dialog="true" data-close-btn="false">
+		<div id="dialog" title="Basic dialog">
+			<div data-role="header">
+				<a href="#homepage" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" data-transition="fade"></a>
+				<h1>Step 3 of 7</h1>
+			</div>
+			<div data-role="ui-content">
+				<center><h1>Processing</h1></center>
+				<p>"Processing" describes how the beans are removed from the coffee cherry.  Processing plays a part in overall flavour, acidity, and body.</p>
+				<center><img src="images/washing.jpg" style="width: 300px; height=300px;"></center>
+				<div data-role="collapsible">
+					<h4>Washed Processing</h4> 
+					<p><i>Light, clean and tangy</i>
+					<ul>
+						<li>Pulp is mechanically removed, leaving a sticky layer called mucilage on the beans</li>
+						<li>Beans are washed and held in a concrete fermentation tank for 18-36 hours to develop their flavour, acidity, and body</li>
+						<li>One final washing, and the beans are dried, parchment is removed and the beans are sorted</li>
+					</ul></p>
+				</div>
+				<div data-role="collapsible">
+					<h4>Semi-Washed Processing</h4>
+					<p><i>Lower acidity, light-bodied and smooth</i>
+					<ul>
+						<li>Pulp is removed using small hand-pulping machines, and then the coffee is washed and laid out in the sun</li>
+						<li>After partial drying, parchment is removed and the coffee is laid out again for final drying</li>
+						<li>The beans are then sorted and graded</li>
+					</ul></p>
+				</div>
+				<div data-role="collapsible">
+					<h4>Natural Processing</h4>
+					<p><i>Wild, unpredictable and berry</i>
+					<ul>
+						<li>Coffee cherries dry completely on the bean</li>
+						<li>This develops flavours before the skin and parchment are removed</li>
+						<li>This is followed by sorting and grading on the beans</li>
+					</ul></p>
+				</div>
+			</div>
+			<div data-role="footer">
+				<a href="#pageThree" button class="ui-btn ui-icon-arrow-l ui-corner-all ui-btn-icon-notext" data-transition="fade"></a> 
+				<a href="#pageFive" button class="ui-btn ui-icon-arrow-r ui-corner-all ui-btn-icon-notext" data-transition="fade"></a> 
+			</div>
+		</div>
+	</section>
+
+	<!--Fifth Dialogue Page-->
+	<section id="pageFive" data-role="page" data-dialog="true" data-close-btn="false">
+		<div id="dialog" title="Basic dialog">
+			<div data-role="header">
+				<a href="#homepage" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" data-transition="fade"></a>
+				<h1>Step 4 of 7</h1>
+			</div>
+			<div data-role="ui-content">
+				<center><h1>Roasting</h1></center>
+				<center><p>There are three general catagories for roasting: <a href="#blonde" data-rel="popup"><i>blonde,</a> <a href="#medium" data-rel="popup">medium,</a> and <a href="#dark" data-rel="popup">dark.</i></p></a></center>
+				<center><img src="images/roast.gif" style="width:300px; height:300px;"></center>
+			</div>
+			<div data-role="popup" id="blonde">
+				<p>Shorter roast time, lighter body, mellow flavours.</p>
+			</div>
+			<div data-role="popup" id="medium">
+				<p>Balanced, with smooth and rich flavours.</p>
+			</div>
+			<div data-role="popup" id="dark">
+				<p>Longest roast time, fuller body and robust, bold flavours.</p>
+			</div>
+
+			<div data-role="footer">
+				<a href="#pageFour" button class="ui-btn ui-icon-arrow-l ui-corner-all ui-btn-icon-notext" data-transition="fade"></a>
+				<a href="#pageSix" button class="ui-btn ui-icon-arrow-r ui-corner-all ui-btn-icon-notext" data-transition="fade"></a> 
+			</div>
+		</div>
+	</section>
+
+	<!--Sixth Dialogue Page-->
+	<section id="pageSix" data-role="page" data-dialog="true" data-close-btn="false">
+		<div id="dialog" title="Basic dialog">
+			<div data-role="header">
+				<a href="#homepage" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" data-transition="fade"></a>
+				<h1>Step 5 of 7</h1>
+			</div>
+			<div data-role="ui-content">
+				<center><h1>Brewing</h1></center>
+				<img src="images/brew.png" style="width: 100%; height: 100%;">
+				<p><i>For a coffee tasting, we suggest brewing in a French Press.  This is the prefered method of brewing because it provides a strong flavour profile of the coffee.</i></p>
+			</div>
+			<div data-role="footer">
+				<a href="#pageFive" button class="ui-btn ui-icon-arrow-l ui-corner-all ui-btn-icon-notext" data-transition="fade"></a> 
+				<a href="#pageSeven" button class="ui-btn ui-icon-arrow-r ui-corner-all ui-btn-icon-notext" data-transition="fade"></a> 
+			</div>
+		</div>
+	</section>
+
+	<!--Seventh Dialogue Page-->
+	<section id="pageSeven" data-role="page" data-dialog="true" data-close-btn="false">
+		<div id="dialog" title="Basic dialog">
+			<div data-role="header">
+				<a href="#homepage" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" data-transition="fade"></a>
+				<h1>Step 6 of 7</h1>
+			</div>
+			<div data-role="ui-content">
+				<center><h1>Tasting</h1></center>
+				<div class="ui-grid-c">
+					<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:60px">Aroma<center><img src="images/aroma.png" style="width:90%; height:90%;"></center></div></div>
+					<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:60px">Acidity<center><img src="images/acidity.png" style="width:90%; height:90%;"></center></div></div>
+					<div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:60px">Body<center><img src="images/body.png" style="width:90%; height:90%;"></center></div></div>
+					<div class="ui-block-d"><div class="ui-bar ui-bar-a" style="height:60px">Flavour<center><img src="images/flavour.png" style="width:90%; height:90%;"></center></div></div>
+				</div>
+				<br>
+				<h4>Aroma</h4>
+					<p><i>The way the coffee smells - it could be earthy, spicy, floral, nutty or others. These distinctive aromas are directly related to the coffee's flavour.</i></p>
+				<h4>Acidity</h4>
+					<p><i>The tangy or tartness quality, not the actual pH level of the coffee. You feel it on the sides and tip of your tongue, the way you do when you taste citrus fruits or drinks. Coffee with high acidity is described as bright, tangy and crisp with a clean finish. Low-acidity coffee feels smooth in your mouth and lingers.</i></p>
+				<h4>Body</h4>
+					<p><i>The weight of the coffee on your tongue. Like comparing whole milk with nonfat milk. Light-bodied coffees feel light and don't linger; you feel the weight of full-bodied coffees on your tongue and the flavour lingers.</i></p>
+				<h4>Flavour</h4>
+					<p><i>The way the coffee tastes. Citus, cocoa and berries are just a few flavours you might taste. Some are obvious, others are subtle.</i></p>
+			</div>
+			<div data-role="footer">
+				<a href="#pageSix" class="ui-btn ui-icon-arrow-l ui-corner-all ui-btn-icon-notext" data-transition="fade"></a> 
+				<a href="#pageEight" class="ui-btn ui-icon-arrow-r ui-corner-all ui-btn-icon-notext" data-transition="fade"></a> 
+			</div>
+		</div>
+	</section>
+
+	<!--Eighth Dialogue Page-->
+	<section id="pageEight" data-role="page" data-dialog="true" data-close-btn="false">
+		<div id="dialog" title="Basic dialog">
+			<div data-role="header">
+				<a href="#homepage" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" data-transition="fade"></a>
+				<h1>Step 7 of 7</h1>
+			</div>
+			<div data-role="ui-content">
+				<center><h1>Tasting Steps</h1></center>
+				<p>Follow each of these steps each time you tasste to truly appreciate the characteristics of the coffees. See how the characteristics you like correspond to region, processing method and roast.</p>
+				<ol>
+					<li><b>Smell</b>: <i>Always smell before you taste. Your tongue only distinguishes four tastes - but your nose can detect many more smells. Cup you hand over the coffee, hold close to your nose and inhale.</i></li>
+					<li><b>Slurp</b>:<i> Slurp, don't sip your coffee. It allows the coffee to spray across your palate and lets subtle flavours and aromas reach your nose.</i></li>
+					<li><b>Locate</b>: <i>Think about where the flavours hit you on your tongue. Is it the side or the tip of your tongue? What does the weight feel like and where?</i></li>
+					<li><b>Describe</b>: <i>Now you have smelled and tasted the coffee think about the experience. How would you describe it? Describe the aroma, acidity, body, and flavour. Think of foods that would pair well.</i></li>
+			</div>
+			<div data-role="footer"> 
+				<a href="#pageSeven" button class="ui-btn ui-icon-arrow-l ui-corner-all ui-btn-icon-notext" data-transition="fade"></a> 
+				<button class="ui-btn ui-icon-arrow-r ui-corner-all ui-btn-icon-notext" disabled="disabled" data-transition="fade"></button> 
+			</div>
+		</div>
+	</section>
+
+		<!--About Me Dialogue Page-->
+	<section id="aboutMe" data-role="page" data-theme="b">
+		<div data-role="header">
+			<h1>About Me</h1>
+		</div>
+		<div data-role="ui-content">
+			<p>Name: Reanne Senkiw</p>
+			<p>School: Algonquin College</p>
+
+		</div>
+		<div data-role="footer" data-position="fixed"> 
+			<div data-role="navbar" data-iconpos="bottom">
+					<ul>
+						<li><a href="#homepage" data-icon="home">Home</a></li>
+						<li><a href="#aboutMe" data-icon="star">About Me</a></li>
+					</ul>
+				</div>
+		</div>
+		</div>
+	</section>
+
+
+</body>
+</html>
