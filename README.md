@@ -5,6 +5,6 @@
 
 ###Description:
 
-This is a mobile web app created with jQuery
+This is a custom mobile web app created for a coffee shop, using jQuery Mobile.  
 
 ###Instructions:
