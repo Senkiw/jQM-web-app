@@ -1,8 +1,5 @@
 # jQM-web-app
-
-###Description:
---------------------
-This is a custom mobile web app created for a coffee shop, using jQuery Mobile.  
+A custom mobile web app created for a coffee shop, using jQuery Mobile.  
 
 ------------------------------------------
 
@@ -12,3 +9,4 @@ For proper functionality of this app please ensure the jQuery library is loaded.
 
 ####Authors
 ---------------------------
+**Reanne Senkiw**
